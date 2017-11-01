@@ -89,15 +89,16 @@
 
             <EditText
                 android:id="@+id/inputID"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/firstSeparator"
                 android:gravity="left|center_vertical"
                 android:paddingTop="5dp"
-                android:text="id"
                 android:textSize="20dp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:maxLength="15"/>
+                <!--android:text="id"-->
         </LinearLayout>
 
         <LinearLayout
@@ -126,14 +127,27 @@
 
             <EditText
                 android:id="@+id/inputPassword"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:paddingTop="5dp"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/secondSeparator"
                 android:gravity="left|center_vertical"
-                android:text="password"
                 android:textSize="20dp"
+                android:textColor="#000000"
+                android:maxLength="15"/>
+                <!--android:text="password"-->
+
+            <Button
+                android:id="@+id/condition"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/inputPassword"
+                android:background="#00000000"
+                android:text="Y/N"
+                android:textSize="15dp"
                 android:textColor="#000000"/>
 
         </LinearLayout>
