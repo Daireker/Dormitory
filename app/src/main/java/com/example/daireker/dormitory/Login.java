@@ -71,13 +71,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
     public void check(){
         if(mID.getText().toString().length()==0 ||
                 mPassword.getText().toString().length()==0){
-            Toast.makeText(Login.this,"请输入账户或密码",Toast.LENGTH_SHORT).show();
+            ToastUtil.showToast(Login.this,"请输入账户或密码");
+            //Toast.makeText(Login.this,"请输入账户或密码",Toast.LENGTH_SHORT).show();
         }else if (mID.getText().toString().equals("000000") &&
                 mPassword.getText().toString().equals("000000")){
             Intent i = new Intent(this,MainActivity.class);
             startActivity(i);
         }else{
-            Toast.makeText(Login.this,"账户或密码不正确",Toast.LENGTH_SHORT).show();
+            ToastUtil.showToast(Login.this,"账户或密码不正确");
+            //Toast.makeText(Login.this,"账户或密码不正确",Toast.LENGTH_SHORT).show();
         }
     }
 }

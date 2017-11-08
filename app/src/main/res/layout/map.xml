@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mapTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/mapIntroduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="校园地图详情"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/btn_back_to_main"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mapTitle"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:divider="@drawable/longborder"
+            android:showDividers="middle|beginning|end">
+
+            <ImageView
+                android:id="@+id/whole_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/map"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:divider="@drawable/longborder"
+                    android:showDividers="beginning|middle|end">
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="①   1号楼   研发楼"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="②   2号楼   办公楼Ⅰ（教务、各领域学科组办公室）"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/three"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="③   3号楼   教学楼（图书馆、学生工作办公室）"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/four"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="④   4号楼   学生食堂"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/five"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑤   5号楼   学生公寓Ⅰ"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/six"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑥   7号楼   B型专家公寓"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑦   6号楼   A型专家公寓"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑧   8号楼   学生公寓"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/nine"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑨   9号楼   学生公寓"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/ten"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑩   10号楼   数字化技术研究室、信息系统研究室"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/eleven"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑪   11号楼   C型专家公寓Ⅰ"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twelve"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑫   12号楼   办公楼Ⅱ（综合、财务、后勤办公室）"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/thirteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑬   学生公寓Ⅱ"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/fourteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑭   教师公寓"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/fifteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑮   学校主校门"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/sixteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑯   门卫"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/seventeen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑰   篮球场"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/eighteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑱   自行车停放处"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/nineteen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑲   停车位"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="⑳   草坪"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="21   北京大学图书馆软微学院分馆"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="22   商店"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="23   停车位"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="24   开水房"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="25   绿地"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/twenty_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="26   中心广场"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

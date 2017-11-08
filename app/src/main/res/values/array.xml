@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="peopleArr">
+        <item>单人</item>
+        <item>两人</item>
+        <item>三人</item>
+        <item>四人</item>
+        <item>五人</item>
+    </string-array>
+
+    <string-array name="buildingArr">
+        <item>5号楼</item>
+        <item>8号楼</item>
+        <item>9号楼</item>
+        <item>13号楼</item>
+    </string-array>
+</resources>
