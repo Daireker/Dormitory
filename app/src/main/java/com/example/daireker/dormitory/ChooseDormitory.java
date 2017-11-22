@@ -22,7 +22,7 @@ public class ChooseDormitory extends AppCompatActivity implements View.OnClickLi
 
     private String[] mPeopleStr = {"单人","两人","三人","四人","五人"};
 
-    private String[] mBuildingStr = {"5号楼","8号楼","9号楼","13号楼"};
+    private String[] mBuildingStr = {"5号楼","8号楼","9号楼","13号楼","14号楼"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +70,7 @@ public class ChooseDormitory extends AppCompatActivity implements View.OnClickLi
         switch (view.getId()){
             case R.id.choose_people_number:
                 break;
-            case  R.id.choose_buliding_number:
+            case R.id.choose_buliding_number:
                 break;
             case R.id.btn_choose_back_to_main:
                 Intent i = new Intent(this,MainActivity.class);
