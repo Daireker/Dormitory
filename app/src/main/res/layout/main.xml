@@ -85,7 +85,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:gravity="center_vertical|right"
-                    android:text="X先生"
+                    android:text=""
                     android:textSize="20dp"
                     android:textColor="#808A87"/>
 
@@ -112,7 +112,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:gravity="center_vertical|right"
-                    android:text="1701210000"
+                    android:text=""
                     android:textSize="20dp"
                     android:textColor="#808A87"/>
 
@@ -139,7 +139,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:gravity="center_vertical|right"
-                    android:text="男"
+                    android:text=""
                     android:textSize="20dp"
                     android:textColor="#808A87"/>
 
@@ -204,7 +204,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:gravity="center_vertical|right"
-                    android:text="未办理"
+                    android:text=""
                     android:textSize="20dp"
                     android:textColor="#808A87"/>
 
@@ -231,7 +231,7 @@
                     android:layout_height="match_parent"
                     android:paddingRight="15dp"
                     android:gravity="center_vertical|right"
-                    android:text="未办理"
+                    android:text=""
                     android:textSize="20dp"
                     android:textColor="#808A87"/>
 
