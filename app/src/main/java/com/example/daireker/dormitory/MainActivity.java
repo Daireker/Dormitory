@@ -95,12 +95,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ToastUtil.showToast(MainActivity.this,"To Be Continue...");
                 break;
             case R.id.btn_update:
-                ToastUtil.showToast(MainActivity.this,"To Be Continue...");
+                Intent q = new Intent(this,MainActivity.class);
+                q.putExtra("stuid",studentid);
+                startActivity(q);
+                finish();
                 break;
             default:
                 break;
         }
-
     }
 
     private void queryStuDatail(String stuid){

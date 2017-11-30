@@ -30,6 +30,25 @@
             android:layout_centerVertical="true"
             android:src="@drawable/back"/>
 
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:text="查询"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+        
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:layout_toLeftOf="@+id/btn_query"/>
+
     </RelativeLayout>
 
     <LinearLayout
@@ -96,14 +115,253 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/show_vcode"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="校验码"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/vcodeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="20dp"
+                    android:textColor="#808A87"
+                    android:maxLength="20"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:divider="@drawable/longborder"
+            android:showDividers="beginning|middle|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人1"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_1_stuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColorHint="#808A87"
+                    android:hint="学号"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人1"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_1_vcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:textColorHint="#808A87"
+                    android:hint="校验码"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:divider="@drawable/longborder"
+            android:showDividers="beginning|middle|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人2"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_2_stuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColorHint="#808A87"
+                    android:hint="学号"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人2"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_2_vcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:textColorHint="#808A87"
+                    android:hint="校验码"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:divider="@drawable/longborder"
+            android:showDividers="beginning|middle|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人3"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_3_stuid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:textColorHint="#808A87"
+                    android:hint="学号"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="同住人3"
+                    android:textSize="20dp"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/roommate_3_vcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#808A87"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:textColorHint="#808A87"
+                    android:hint="校验码"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <Button
-            android:id="@+id/bt_commit"
+            android:id="@+id/btn_commit"
             android:layout_width="200dp"
             android:layout_height="50dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:layout_marginTop="285dp"
+            android:gravity="center"
             android:background="@android:color/darker_gray"
             android:text="提交"
             android:textSize="20dp"
