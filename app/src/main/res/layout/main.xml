@@ -261,7 +261,7 @@
                 android:gravity="center"
                 android:text="地图详情点击图片"
                 android:textSize="15dp"
-                android:textColor="#000000"/>
+                android:textColor="#808A87"/>
 
         </LinearLayout>
 

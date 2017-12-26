@@ -173,7 +173,7 @@ public class ChooseDormitory extends AppCompatActivity implements View.OnClickLi
                                 String v1code, String v2code, String v3code){
         int writeNum = 1;
 
-        if((stu1id != null && stu1id.length() > 0) || (v1code != null && v1code.length() > 0)){
+        if((stu1id != null && stu1id.length() > 0) && (v1code != null && v1code.length() > 0)){
             if(stu1id.equals(stuid)){
                 ToastUtil.showToast(ChooseDormitory.this,"同住人间或同住人与自己信息重复！");
                 return false;
@@ -181,7 +181,7 @@ public class ChooseDormitory extends AppCompatActivity implements View.OnClickLi
                 writeNum += 1;
             }
         }
-        if((stu2id != null && stu2id.length() > 0) || (v2code != null && v2code.length() > 0)){
+        if((stu2id != null && stu2id.length() > 0) && (v2code != null && v2code.length() > 0)){
             if(stu2id.equals(stuid) || stu2id.equals(stu1id)){
                 ToastUtil.showToast(ChooseDormitory.this,"同住人间或同住人与自己信息重复！");
                 return false;
@@ -189,7 +189,7 @@ public class ChooseDormitory extends AppCompatActivity implements View.OnClickLi
                 writeNum += 1;
             }
         }
-        if((stu3id != null && stu3id.length() > 0) || (v3code != null && v3code.length() > 0)){
+        if((stu3id != null && stu3id.length() > 0) && (v3code != null && v3code.length() > 0)){
             if(stu3id.equals(stuid) || stu3id.equals(stu1id) || stu3id.equals(stu2id)){
                 ToastUtil.showToast(ChooseDormitory.this,"同住人间或同住人与自己信息重复！");
                 return false;
